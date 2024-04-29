@@ -1,7 +1,7 @@
 def test_user_signup(client):
     signup_data = {
         "name": "Test User",
-        "email": "test@example.com",
+        "email": "testcase@example.com",
         "password": "password123",
     }
     response = client.post("/signup", json=signup_data)
@@ -11,7 +11,7 @@ def test_user_signup(client):
 def test_retailer_signup(client):
     retailer_signup_data = {
         "name": "Test Retailer",
-        "email": "retailer@example.com",
+        "email": "retailertestcase@example.com",
         "password": "password123",
         "phoneNo": "1234567890",
         "address": "123 Test Street",
